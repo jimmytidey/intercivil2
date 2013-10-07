@@ -49,7 +49,7 @@
 		    <div class='container-fluid'>
 				<div class="row-fluid" id='logo_container'>
 				    <div class='span7'>
-	        			<a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">    					
+	        			<a class="brand" id="logo" href="<?php echo home_url(); ?>">    					
     						<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php echo get_bloginfo('description'); ?>">
         			    </a>
 				    </div>

@@ -298,7 +298,11 @@ a {
 
 .post_date { 
     font-weight:800;
-    margin-bottom:1em;
+    margin-bottom:2em;
+}
+
+h1 {
+    font-size: 34.5px;
 }
 
 
