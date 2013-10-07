@@ -4,80 +4,50 @@
 				$blog_hero = of_get_option('blog_hero');
 				if ($blog_hero){
 			?>
+			
+			<script>
+			    jQuery('.carousel').carousel();
+			</script>
+			
 			<div class="clearfix row-fluid">
-			    <img src='<?php bloginfo('template_directory'); ?>/images/front.png' class='front_page_image' id='front_page_image'>
-			    <div class='carousel_caption'>
-			        <h4 class='carousel_caption_text'></h4>
-			    </div>
-			    <a class='left_arrow visible-desktop' ></a>
-			    <a class='right_arrow visible-desktop' ></a>
 			    
-			</div>
-            <script>
-                
-                var image_changer_images = new Array()
-                
-                image_changer_images[0] = "<?php bloginfo('template_directory'); ?>/images/YMI.jpg";
-                image_changer_images[1] = "<?php bloginfo('template_directory'); ?>/images/kids.jpg";
-                image_changer_images[2] = "<?php bloginfo('template_directory'); ?>/images/pros.jpg";
-                image_changer_images[3] = "<?php bloginfo('template_directory'); ?>/images/food.jpg";
-                
-                jQuery('#menu-main > li:eq(0)').addClass('selected');
-                
-                var cap_text = jQuery('#menu-main > li > a:eq(0)').text();
-                
-                jQuery('.carousel_caption_text').text(cap_text);
-                
-                var imageChangerFunction = setInterval("timerRespond()", 3000);
-                var image_changer_position=0;
-
-                function timerRespond() {
+                <div id="myCarousel" class="carousel slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
                     
-                    updateImage();
-                    
-                    image_changer_position++;
-                    if (image_changer_position == 4){ 
-                        image_changer_position = 0;
-                    }
-                
-                }
-                
-                function updateImage() { 
-                    
-                   document.getElementById("front_page_image").src=image_changer_images[image_changer_position];
-
-                    jQuery('#menu-main > li').removeClass('selected');
-                    jQuery('#menu-main > li:eq('+image_changer_position+')').addClass('selected');
-
-                    var cap_text = jQuery('#menu-main > li > a:eq('+image_changer_position+')').text();
-
-                    jQuery('.carousel_caption_text').text(cap_text);                
-                
-                }
-                
-                
-                jQuery('.right_arrow').click(function(){
-                    image_changer_position++;
-                    
-                    if (image_changer_position == 4) { 
-                        image_changer_position = 0;
-                    }
-                    updateImage()
-                });
-                
-                jQuery('.left_arrow').click(function(){
-                    image_changer_position--;
-                    if (image_changer_position == -1) { 
-                        image_changer_position = 3;
-                    }
-                    updateImage()
-                });
-                
-                jQuery('.menu-item-object-page').hover(function(){
-                    clearInterval(imageChangerFunction);
-                });
-            </script>
-	
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                       
+                        <div class="active item">
+                            <img src='<?php bloginfo('template_directory'); ?>/images/YMI.jpg' />
+                            <div class="carousel-caption"><h4>Work for the young</h4></div>
+                        </div>
+                        
+                        <div class="item">
+                            <img src='<?php bloginfo('template_directory'); ?>/images/kids.jpg' />
+                            <div class="carousel-caption"><h4>Kids In Diversity</h4></div>
+                        </div>
+                        
+                        <div class="item">
+                            <img src='<?php bloginfo('template_directory'); ?>/images/pros.jpg' />
+                            <div class="carousel-caption"><h4>Professionals in diversity</h4></div>
+                        </div>
+                        
+                        <div class="item">
+                            <img src='<?php bloginfo('template_directory'); ?>/images/food.jpg' />
+                            <div class="carousel-caption"><h4>Sharing food</h4></div>
+                        </div>
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                </div>
+            </div>    
+             
 			<?php
 			    }
 			?>

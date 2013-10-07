@@ -11,10 +11,9 @@
                             Email: info@intercivil.net</p>
     	                </div>
     	                <div class='span2 offset4'>
-    	                    <a href='http://www.youtube.com/user/TheIntercivilSociety'>
+    	                    
     	                        <p>Find us on:</p>
-	                            <img src='<?php bloginfo('template_directory'); ?>/images/youtube.png' />
-    	                    </a>
+	                            <a href='http://www.youtube.com/user/TheIntercivilSociety'><img src='<?php bloginfo('template_directory'); ?>/images/youtube.png' /></a>
     	                </div>
     	            </div>    
 	                    
@@ -40,7 +39,18 @@
   			<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 		<![endif]-->
 		
+
+        <script>
+          $(document).ready(function(){
+            $('.carousel').carousel({
+              interval: 10000
+            });
+          });
+        </script>
+		
 		<?php wp_footer(); // js scripts are inserted using this function ?>
+        
+        
         
 	</body>
 

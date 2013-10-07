@@ -1,7 +1,9 @@
 
 
 
-/* Intercivil cusotisations */ 
+/* Intercivil customisations */ 
+
+/*Typograpgy */ 
 .attribution { 
     text-align:center;
 }
@@ -12,6 +14,14 @@ body {
 
 a:hover, a:focus {
     color: #cc4338;
+}
+
+a { 
+    color:#fff;
+}
+
+.post_date { 
+    margin-bottom:2em;
 }
 
 .my-container { 
@@ -126,11 +136,17 @@ header {
     background-color:#666666;
 }
 
+.current_page_ancestor>a, .current-menu-item a { 
+    color:#CF7B35!important;
+}
+
 .dropdown-menu { 
     position:absolute;
     width:200px;
     left:-20px;
     top:48px;
+    border-radius:0px;
+    padding:0px;
 }
 
 .dropdown-menu a{
@@ -159,7 +175,7 @@ footer {
 
 
 .attribution { 
-    color:#cc4338;
+    color:#fff;
 }
 
 @media (min-width: 768px) {
@@ -251,7 +267,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-    background-color:#666666;
+    background-color:#EDEDED;
     background-image:none;
     color: #cf7b35;
 }
@@ -260,7 +276,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
-    background-color:#666666;
+    background-color:#EDEDED;
     background-image:none;
     color: #cf7b35;
 }
@@ -401,6 +417,11 @@ body.admin-bar .navbar-fixed-top{
 	padding-right: 0;
 }
 
+.navbar { 
+    margin-top:10px;
+    margin-bottom:28px;
+}
+
 #inner-header{
 	width: 100%;
 }
@@ -416,6 +437,8 @@ input, textarea, select, .uneditable-input {
 .navbar-search{
 	padding-left: 0;
 }
+
+
 
 #s{
 	width: 100px;
