@@ -10,10 +10,12 @@
                             London land line: +44 (0)20 7148 6738<br />
                             Email: info@intercivil.net</p>
     	                </div>
-    	                <div class='span2 offset4'>
+    	                <div class='span3 offset4'>
     	                    
-    	                        <p>Find us on:</p>
-	                            <a href='http://www.youtube.com/user/TheIntercivilSociety'><img src='<?php bloginfo('template_directory'); ?>/images/youtube.png' /></a>
+    	                       
+	                        <a href='http://www.youtube.com/user/TheIntercivilSociety' class='soc_media_link'><img src='<?php bloginfo('template_directory'); ?>/images/youtube.png'  /></a>
+                            <a href='http://www.linkedin.com/company/2180495?trk=tyah&trkInfo=tas%3Athe%20intercivil%20' class='soc_media_link'><img src='<?php bloginfo('template_directory'); ?>/images/linked_in.png' /></a>
+    	                
     	                </div>
     	            </div>    
 	                    

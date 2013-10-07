@@ -311,6 +311,9 @@ footer {
     color:white;
 }
 
+.soc_media_link { 
+    margin-right:10px;
+}
 
 /* GENERAL STYLES */
 .post_content li { 
