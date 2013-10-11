@@ -180,7 +180,7 @@ footer {
 
 @media (min-width: 768px) {
     #menu-main li {
-        width: 185px;
+        width: 23%;
         text-align:center;
     }
     
@@ -218,6 +218,8 @@ footer {
 
 #menu-main a { 
     color:#cc4138;
+    text-transform:uppercase;
+    font-weight:bold;
 }
 
 #menu-main { 
@@ -231,6 +233,7 @@ footer {
     margin: 0 10px 0 0;
     position: relative;  
     color:#cc4138;
+    list-style:none;
 }
 
 #menu-contact li { 

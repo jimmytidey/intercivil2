@@ -507,7 +507,7 @@ add_filter( 'the_content', 'first_paragraph' );
             $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) ); 
             $class_names = ' class="' . esc_attr( $class_names ) . '"'; 
             $output .= $indent . '<li id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';             
-            $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : ''; 
+            //$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : ''; 
             $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : ''; 
             $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : ''; 
             $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : ''; 
@@ -826,7 +826,7 @@ $id = strlen( $id ) ? ' id="' . esc_attr( $id ) . '"' : '';
  
 $output .= $indent . '<li' . $id . $value . $class_names . $li_attributes . '>';
  
-$attributes = ! empty( $item->attr_title ) ? ' title="' . esc_attr( $item->attr_title ) .'"' : '';
+// $attributes = ! empty( $item->attr_title ) ? ' title="' . esc_attr( $item->attr_title ) .'"' : '';
 $attributes .= ! empty( $item->target ) ? ' target="' . esc_attr( $item->target ) .'"' : '';
 $attributes .= ! empty( $item->xfn ) ? ' rel="' . esc_attr( $item->xfn ) .'"' : '';
 $attributes .= ! empty( $item->url ) ? ' href="' . esc_attr( $item->url ) .'"' : '';
@@ -834,7 +834,7 @@ $attributes .= ($args->has_children) ? ' class="dropdown-toggle" data-toggle="dr
  
 $item_output = $args->before;
 $item_output .= '<a'. $attributes .'>';
-$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+//$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
 $item_output .= ($depth == 0 && $args->has_children) ? ' <b class="caret"></b></a>' : '</a>';
 $item_output .= $args->after;
  

@@ -74,7 +74,7 @@ $id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
 $output .= $indent . '<li' . $id . $value . $class_names .'>';
 
 $atts = array();
-$atts['title'] = ! empty( $item->title ) ? $item->title : '';
+//$atts['title'] = ! empty( $item->title ) ? $item->title : '';
 $atts['target'] = ! empty( $item->target ) ? $item->target : '';
 $atts['rel'] = ! empty( $item->xfn ) ? $item->xfn : '';
 
