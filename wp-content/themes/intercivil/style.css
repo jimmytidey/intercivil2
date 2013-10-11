@@ -108,6 +108,10 @@ header {
     border:none;
 }
 
+#menu-main li ul { 
+    width:300px;
+}
+
 
 .navbar .nav > li > .dropdown-menu:before  { 
     display:none;
