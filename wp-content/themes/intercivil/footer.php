@@ -3,7 +3,7 @@
 				<div id="inner-footer" class="clearfix">
 		            <div class='row-fluid'>
 	    	            <div class='span5'>
-        		            <p>Contact Information:</p>
+        		            <p>Contact:</p>
         		            <p>Hub Westminster, New Zealand House,<br />
                             80 Haymarket, London, SW1Y 4TE, United Kingdom<br />
                             Telephone: +44 (0)20 7148 6738<br />
