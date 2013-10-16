@@ -12,7 +12,7 @@ Template Name: All News Page
 			
 				<div id="main" class="span10 clearfix" role="main">
                     
-                    <h2>Latest News</h2>    
+               <h2>Latest News</h2> 
                     
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<?php get_template_part( 'content', get_post_format() ); ?>					

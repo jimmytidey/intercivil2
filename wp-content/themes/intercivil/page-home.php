@@ -16,7 +16,7 @@ get_header(); ?>
 						
 						<header>
 							
-							<div class="page-header"><h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1></div>
+							<div class="page-header"><h1 class="page-title" style="display: none;" itemprop="headline"><?php the_title(); ?></h1></div>
 						
 						</header> <!-- end article header -->
 					

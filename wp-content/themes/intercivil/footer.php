@@ -7,12 +7,12 @@
         		            <p>Hub Westminster, New Zealand House,<br />
                             80 Haymarket, London, SW1Y 4TE, United Kingdom<br />
                             Telephone: +44 (0)20 7148 6738<br />
-                            Email: info@intercivil.net</p>
+                            Email: <a href="mailto:info@intercivil.net">info@intercivil.net</a></p>
     	                </div>
     	                <div class='span3 offset4'>
     	                    
     	                       
-	                        <a href='http://www.youtube.com/user/TheIntercivilSociety' class='soc_media_link'><img alt='Youtube Link' src='<?php bloginfo('template_directory'); ?>/images/youtube.png'  /></a>
+	                        <a href='http://www.youtube.com/user/intercivil' class='soc_media_link'><img alt='Youtube Link' src='<?php bloginfo('template_directory'); ?>/images/youtube.png'  /></a>
                             <a href='http://www.linkedin.com/company/2180495' class='soc_media_link'><img alt='Linked In link' src='<?php bloginfo('template_directory'); ?>/images/linked_in.png' /></a>
     	                
     	                </div>
